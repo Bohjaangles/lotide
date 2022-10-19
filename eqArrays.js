@@ -9,22 +9,24 @@ const assertEqual = function(actual, expected) {
 };
 
 const eqArrays = function(actual, expected) {
-  // loop through element by element and comparing the ith element of actual vs exp, and if all pass and 
-  // they are the same length, return PaymentResponse, else fail
-  
-  let isTrue = true;
-  for (let i = 0; i < actual.length; i++){
-    if (!actual[i] === expected[i]){
-      isTrue = false;
-    } 
+  if (actual.length !== expected.length) {
+    return false;
   }
-  return isTrue;
-}
+
+  for (let i = 0; i < actual.length; i++) {
+    if (actual[i] !== expected[i]) {
+      return false;
+    }
+  }
+
+  return true;
+};
+
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 assertEqual(eqArrays([1, 2, 3], [3, 2, 3]), false); // => should PASS
 
-eqArrays([1, 2, 3], [1, 2, 3]) // => true
-eqArrays([1, 2, 3], [3, 2, 1]) // => false
+eqArrays([1, 2, 3], [1, 2, 3]); // => true
+eqArrays([1, 2, 3], [3, 2, 1]); // => false
 
-eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
-eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
+eqArrays(["1", "2", "3"], ["1", "2", "3"]); // => true
+eqArrays(["1", "2", "3"], ["1", "2", 3]); // => false
