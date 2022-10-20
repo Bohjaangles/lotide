@@ -55,7 +55,7 @@ const middle = function(arr) {
   return result;
 };
 
-middle([1]); // => []
+assertArraysEqual(middle([1]), []); // => []
 middle([1, 2]); // => []
 
 middle([1, 2, 3]); // => [2]
