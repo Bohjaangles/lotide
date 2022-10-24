@@ -1,6 +1,3 @@
-const eqArrays = require('./eqArrays');
-const assertEqual = require('./assertEqual');
-const assertArraysEqual = require('./assertArraysEqual');
 
 const middle = function(arr) {
   // let result = [];
@@ -8,8 +5,6 @@ const middle = function(arr) {
   // find the length of arr
   let midOdd = Math.floor(arr.length / 2);
   let midEven = arr.length / 2;
-
-  console.log('arr', arr, 'len', midOdd, 'arr.length', arr.length);
 
   // if statement tree, if arrlen is < 2, result is mt arr
   if (arr.length < 3) {
