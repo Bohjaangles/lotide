@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "a library of some basic functions for arrays and objects",
+  "name": "@rjmueller/lotide",
+  "version": "1.0.1",
+  "description": "student project library of basic functions for use with arrays and objects",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Bohjaangles/lotide.git"
   },
-  "author": "",
+  "author": "{name: 'Russel M'}",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Bohjaangles/lotide/issues"

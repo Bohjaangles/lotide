@@ -22,20 +22,20 @@ const without = require('./without');
 
 module.exports = {
   tail,
-    assertEqual,
-      assertArraysEqual,
-        eqArrays,
-          head,
-            middle,
-            assertObjectsEqual,//needs mocha test
-            countLetters,//needs mocha test
-            countOnly,//needs mocha test
-            eqObjects,//needs mocha test
-            findKey,//needs mocha test
-            findKeyByValue,//needs mocha test
-            flatten,//needs mocha test
-            letterPositions,//needs mocha test
-            map,//needs mocha test
-            takeUntil,//needs mocha test
-            without//needs mocha test
-          }
+  assertEqual,
+  assertArraysEqual,
+  eqArrays,
+  head,
+  middle,
+  assertObjectsEqual,//needs mocha test
+  countLetters,//needs mocha test
+  countOnly,//needs mocha test
+  eqObjects,//needs mocha test
+  findKey,//needs mocha test
+  findKeyByValue,//needs mocha test
+  flatten,//needs mocha test
+  letterPositions,//needs mocha test
+  map,//needs mocha test
+  takeUntil,//needs mocha test
+  without//needs mocha test
+}

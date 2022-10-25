@@ -12,9 +12,7 @@ const countOnly = function(allItems, itemsToCount) {
           result[item] = 1;
         } 
       }
-    console.log('item', item);
   }
-  console.log('result', result);
   return result;
 }
 
